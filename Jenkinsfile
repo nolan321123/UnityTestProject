@@ -50,6 +50,7 @@ pipeline {
         stage('Unity Build') {
             steps {
                 script {
+                    bat "if not exist ${env.BUILD_OUTPUT_DIR} mkdir ${env.BUILD_OUTPUT_DIR}"
                     // 根据参数选择不同平台的打包命令
                     if (params.BUILD_TARGET == 'Android') {
                         echo "开始Android打包..."
