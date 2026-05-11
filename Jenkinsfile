@@ -30,7 +30,7 @@ pipeline {
         UNITY_PATH_WINDOWS = 'G:\\unity\\Editor\\Unity.exe'
         
         // Jenkins工作区中的项目路径（一般不需要改）
-        PROJECT_PATH = "G:\\unityproj\\My project"
+        PROJECT_PATH = "."
         
         // 构建输出目录
         BUILD_OUTPUT_DIR = "Builds"
